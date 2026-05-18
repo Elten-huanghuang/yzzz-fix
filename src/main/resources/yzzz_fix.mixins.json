@@ -23,7 +23,8 @@
     "cy3_core.EntityMaidMixin",
     "cy3_core.WarMageRingPostMixin",
     "cy3_core.WarMageRingPreMixin",
-    "depthcrawler.DeepvenomMixin",
+    "depthcrawler.DeepvenomStartedMixin",
+    "depthcrawler.DeepvenomExpiresMixin",
     "endinglib.MobEffectUtilsMixin",
     "enigmatic_totem.BetterTotemCompatMixin",
     "forbidden_arcanus.HephaestusForgeBlockMixin",
@@ -44,6 +45,7 @@
     "revelationfix.EntityActuallyHurtMixin",
     "ritual_manager_npe.RitualManagerSaveFixMixin",
     "rough_blade.SummonSwordPROEntityMixin",
+    "slashbladeresharped.ConcentrationRankMixin",
     "yhc.ServerPlayerMixin"
   ],
   "client": [

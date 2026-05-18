@@ -14,6 +14,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  *
  * <p>原代码用于版本迁移的 {@code newVersion} 字段从未写入 NBT，
  * 导致每次加载存档时都会重复执行迁移逻辑，覆盖已有物品栏。</p>
+ *
+ * <p>本 Mixin 在方块实体加载和保存时持久化该标记。
+ * 对于已有存档（标记不存在），直接设置 {@code newVersion = true} 跳过迁移，
+ * 确保物品不会丢失。</p>
  */
 @Mixin(value = EnchantalCoolerBlockEntity.class, remap = false)
 public abstract class EnchantalCoolerBlockEntityMixin {
@@ -24,10 +28,13 @@ public abstract class EnchantalCoolerBlockEntityMixin {
     @Unique
     private static final String yzzzfix$VERSION_KEY = "yzzzfix_NewVersion";
 
+
     @Inject(method = "m_142466_", at = @At("HEAD"), remap = false)
     private void yzzzfix$restoreNewVersion(CompoundTag tag, CallbackInfo ci) {
         if (tag.contains(yzzzfix$VERSION_KEY)) {
             this.newVersion = tag.getBoolean(yzzzfix$VERSION_KEY);
+        } else {
+            this.newVersion = true;
         }
     }
 
