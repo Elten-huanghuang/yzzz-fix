@@ -48,7 +48,12 @@
     "ritual_manager_npe.RitualManagerSaveFixMixin",
     "rough_blade.SummonSwordPROEntityMixin",
     "slashbladeresharped.ConcentrationRankMixin",
-    "yhc.ServerPlayerMixin"
+    "yhc.ServerPlayerMixin",
+    "magnet_fix.ItemEntityAccessor",
+    "magnet_fix.SuperMagnetMixin",
+    "magnet_fix.BrokenMagnetMixin",
+    "magnet_fix.SolarMagnetMixin",
+    "magnet_fix.MagnetUpgradeWrapperMixin"
   ],
   "client": [
     "apotheosis_spawner.LevelRendererMixin",
