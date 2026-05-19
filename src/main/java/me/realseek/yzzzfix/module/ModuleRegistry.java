@@ -77,6 +77,7 @@ public final class ModuleRegistry {
             module("celestial_ench", "Celestial Ench Fix", "celestial_ench_fix", List.of()),
             module("endinglib", "EndingLib Fix", "endinglib_fix", List.of("endinglib")),
             module("eidolon_hearts", "Eidolon Hearts Fix", "eidolon_hearts_fix", List.of("eidolon")),
+            module("goety", "Goety Fix", "goety_fix", List.of("goety")),
             module(
                     "celestial_forge",
                     "Celestial Forge Fix",
@@ -97,7 +98,7 @@ public final class ModuleRegistry {
             module("depthcrawler", "Depthcrawler Fix", "depthcrawler_fix", List.of("depthcrawler")),
             module("moonstone", "Moonstone Fix", "moonstone_fix", List.of("moonstone")),
             module("slashbladeresharped", "SlashBlade SSS Fix", "slashbladeresharped_fix", List.of("slashblade")),
-            module("malum", "Malum Spirit Fix", "malum_spirit_fix", List.of("malum"))
+            module("magnet_fix", "Magnet Throw Filter", "magnet_fix", List.of())
     );
 
     private ModuleRegistry() {

@@ -35,7 +35,6 @@
     "irons_spellbooks.LurkerRingCooldownMixin",
     "lychee_offhand.BrushItemMixin",
     "lychee_offhand.InteractionRecipeModMixin",
-    "malum.SpiritHarvestHandlerMixin",
     "mokels.MokelsBossMantydModMixin",
     "moonstone.BloodEntityMixin",
     "moonstone.BloodMagicBoxMixin",
@@ -47,7 +46,6 @@
     "ritual_manager_npe.RitualManagerSaveFixMixin",
     "rough_blade.SummonSwordPROEntityMixin",
     "slashbladeresharped.ConcentrationRankMixin",
-    "slashbladeresharped.EntityHeavyRainSwordsMixin",
     "yhc.ServerPlayerMixin"
   ],
   "client": [
