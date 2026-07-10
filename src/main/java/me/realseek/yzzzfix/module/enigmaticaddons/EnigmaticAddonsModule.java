@@ -5,7 +5,7 @@ import net.minecraftforge.common.MinecraftForge;
 
 /**
  * Enigmatic Addons 修复模块的运行时钩子。
- * <p>负责注册古旧书袋能力数据持久化的事件监听器。</p>
+ * <p>负责注册魔法石英花绑定修复的事件监听器。</p>
  */
 public final class EnigmaticAddonsModule implements ModuleRuntimeHooks {
 
@@ -16,6 +16,6 @@ public final class EnigmaticAddonsModule implements ModuleRuntimeHooks {
 
     @Override
     public void initCommon() {
-        MinecraftForge.EVENT_BUS.register(AntiqueBagFix.class);
+        MinecraftForge.EVENT_BUS.register(MagicQuartzFlowerBindingFix.class);
     }
 }
